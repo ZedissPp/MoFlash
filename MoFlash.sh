@@ -9,11 +9,15 @@ NC='\033[0m'
 clear
 echo -e "${CYAN}==============================================="
 echo -e "       MOFLASH - TOOL       "
-echo -e "===============================================${NC}"
+echo -e "==============================================/=${NC}"
 
 echo -e "\n[1/5] Verificando dependências..."
-pkg update -y && pkg upgrade -y
-pkg install android-tools wget unzip gawk openssl-tool termux-api -y
+dependencies=(android-tools wget unzip gawk openssl-tool termux-api)
+for package in "${dependencies[@]}"; do
+	if [[ ! "$(command -v $package)" ]]; then
+		pkg install -y "$package" > /dev/null
+	fi
+done
 
 echo -e "\n[2/5] Detectando aparelho..."
 echo -e "${YELLOW}Conecte o celular em modo Fastboot via OTG...${NC}"
