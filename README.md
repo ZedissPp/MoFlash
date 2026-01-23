@@ -15,6 +15,7 @@ Abra o Termux e conceda acesso ao armazenamento:
 
 ---
 
+bash
 `termux-setup-storage`
 
 ---
