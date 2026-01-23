@@ -16,8 +16,8 @@ Abra o Termux e conceda acesso ao armazenamento:
 ---
 
 bash
-```termux-setup-storage
-```
+```termux-setup-storage```
+
 ---
 
 Agora, entre no diretório onde a ferramenta está localizada:
