@@ -19,3 +19,22 @@ Abra o Termux, conceda acesso ao armazenamento e navegue até a pasta da ferrame
 ```bash
 termux-setup-storage
 cd storage/shared/Download/MoFlash_Tool/
+
+## instale as dependências necessárias usando:
+
+```bash
+sh setup.sh
+
+## Para iniciar a ferramenta:
+
+```bash
+sh MoFlash_Tool.sh
+
+
+## ⚠️ Aviso de Responsabilidade
+EXTREMAMENTE IMPORTANTE: Ao utilizar esta ferramenta, você concorda que qualquer problema causado ao seu dispositivo é de sua inteira responsabilidade.
+Tenha cautela extrema ao realizar o flash e ao bloquear o bootloader. A ferramenta verifica se os arquivos existem, mas falhas técnicas podem ocorrer. Proceda com cuidado.
+
+## 👥 Créditos
+@zedisspp
+@twozingoat
