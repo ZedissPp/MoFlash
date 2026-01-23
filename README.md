@@ -15,7 +15,7 @@ Abra o Termux e conceda acesso ao armazenamento:
 
 ---
 
-``termux-setup-storage``
+```termux-setup-storage```
 
 ---
 
