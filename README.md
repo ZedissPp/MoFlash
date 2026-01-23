@@ -1,25 +1,21 @@
-Usability:
+# 🚀 MoFlash Tool
 
-Move MoFlash.sh to the storage/downloads directory.
+Uma ferramenta prática para automação de flash de partições stock via Termux.
 
-Then copy and paste the commands below into Termux:
+---
 
+## 📋 Pré-requisitos
+
+1. **Arquivos Stock:** Extraia e mova seus arquivos de firmware para a pasta `stock` dentro do diretório do **moflashTool**.
+2. **Termux:** Instale os APKs necessários e conceda todas as permissões de sistema solicitadas.
+
+---
+
+## 🛠️ Instalação e Uso
+
+### 1. Preparação do Ambiente
+Abra o Termux, conceda acesso ao armazenamento e navegue até a pasta da ferramenta:
+
+```bash
 termux-setup-storage
-
-cd storage/downloads
-
-mv MoFlash.sh $HOME
-
-cd $HOME
-
-chmod +x MoFlash.sh
-
-Finally, run the tool with the following command:
-
-./MoFlash.sh
-
-⚠️ Important Notice
-
-The tool flashes both A/B slots, but even so,
-be very careful when deciding to lock the bootloader.
-If the phone becomes unusable, the decision was entirely yours.
+cd storage/shared/Download/MoFlash_Tool/
